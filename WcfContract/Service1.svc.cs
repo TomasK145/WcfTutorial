@@ -16,7 +16,7 @@ namespace WcfContract
         {
             if (value == 0)
             {
-                FaultInfo faultInfo = new FaultInfo();
+                FaultInfo faultInfo = new FaultInfo(); 
                 faultInfo.Reason = "Value cannot be 0.";
                 //throw new FaultException<FaultInfo>(faultInfo, faultInfo.Reason);
                 throw new FaultException(faultInfo.Reason);
